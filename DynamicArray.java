@@ -196,8 +196,6 @@ public class DynamicArray {
 
     int indexOf(int searchNumber){
 
-        //System.out.println("indexOf()");
-
         //searching for number in array
         for(int i = 0; i < size; i++){
 
@@ -216,8 +214,6 @@ public class DynamicArray {
     }
 
     void add(int indexInput, int inputInteger) throws IndexOutOfBoundsException{
-
-        //System.out.println("add()");
 
         //throws IndexOutOfBoundsException
         if(indexInput > size || indexInput < 0){
@@ -259,8 +255,6 @@ public class DynamicArray {
             shiftedArray[i - indexInput] = array[i];
 
         }
-
-        //what about if the index is equal to size?
 
         array[indexInput] = inputInteger;
         size = size + 1;
@@ -306,8 +300,6 @@ public class DynamicArray {
             newArray[i] = array[i];
 
         }
-
-        //newArray[indexInput] = inputInteger;
 
         for (int i = indexInput; i < size; i++) {
 
